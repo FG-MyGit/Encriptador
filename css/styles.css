@@ -1,0 +1,267 @@
+/*ESTILOS GENERALES*/
+* { 
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;  
+}
+
+.titulo{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline #434343;
+    text-shadow: 3px 3px 2px #03238b;
+}
+
+/*ESTILO DEL CUERPO*/
+
+body {
+    background-color:#000;
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 0;
+}
+
+/*MAIN*/
+
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+/*BOX INPUT*/
+
+.input-texto {
+    margin-top: 100px;
+    background-image: url("imagenes/fondotexto.jpg");
+    border-color: #434343;
+    border-radius: 5%;
+    border-width: 3px 3px 3px 3px;
+    background-color: transparent;
+    color: #434343;
+}
+
+
+/*BOX DE TEXTO GENERADO*/
+.mensaje {
+    color: #434343;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 480px;
+    background-color: transparent;
+    background-image: url("/img/muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    border-color: #434343;
+    border-width: 3px 3px 3px 3px;
+    border-radius: 5%;
+
+}
+
+/*BOTONES*/
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+/*BOTON DE COPIAR*/
+.copiar{
+    position: relative;
+    margin-top: 500px;
+    margin-left: 500px;
+    border-width: 5px 5px 5px 5px;
+
+    height: 77px;
+    width: 300px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 3px solid rgb(49, 49, 49);
+    margin-bottom: 40px;
+    z-index: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.copiar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: #59a7ff;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.copiar:hover {
+    background-color: #03238b;
+    box-shadow: 0 0 10px #03238b, 0 0 20px #03238b, 0 0 20px #03238b;
+    color: #434343;
+  }
+
+
+
+/*BOTON DE ENCRIPTAR*/
+.encriptar {
+    background-color: transparent;
+    color: black;
+    border-radius: 15%;
+    border-width: 5px 5px 5px 5px;
+
+    position: relative;
+    height: 77px;
+    width: 300px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 3px solid rgb(49, 49, 49);
+    margin-bottom: 40px;
+    z-index: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.encriptar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: #63e6df;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.encriptar:hover {
+    background-color: #03238b;
+    box-shadow: 0 0 10px #03238b, 0 0 20px #03238b, 0 0 20px #03238b;
+    color: #434343;
+  }
+
+
+/*BOTON DE DESENCRIPTAR*/
+
+.desencriptar {
+    margin-left: 30px;
+    border-radius: 15%;
+    color: black;
+    background-color: transparent;
+    border-width: 5px 5px 5px 5px;
+
+    position: relative;
+    height: 77px;
+    width: 300px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 3px solid rgb(49, 49, 49);
+    margin-bottom: 40px;
+    z-index: 0;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.desencriptar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: #59a7ff;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.desencriptar:hover {
+    background-color: #03238b;
+    box-shadow: 0 0 10px #03238b, 0 0 20px #03238b, 0 0 20px #03238b;
+    color: #434343;
+  }
+
+
+/*INFORMACION ADICIONAL*/
+
+.informacion {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.815);
+    text-shadow: 3px 3px 2px #03238b;
+}
+
+/*PARTICULAS DE FONDO*/
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/*FORMATO DE LAS SECCIONES*/
+
+.input-box{
+    height: 0px;
+    padding: 0px;
+}
+
+.mensaje-box{
+    height: 0px;
+    padding: 0px;
+}
+
+.develop{
+    display: inline-block;
+    position: fixed;
+    margin-top: 700px;
+    margin-left: 800px;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    z-index: 0;
+}
+
+.creditos{
+    font-size: 10px;
+    text-shadow: 3px 3px 3px #03238b;
+    text-decoration: underline #03238b;
+}
+
+.linkedin{
+    border-radius: 15%;
+    border: 3px solid rgb(49, 49, 49);
+    position: fixed;
+    margin-left: 35px;
+    width: 1%;
+    height: 2%;
+}
+
+
+.github{
+    border-radius: 15%;
+    border: 3px solid rgb(49, 49, 49);
+    position: fixed;
+    margin-left: 65px;
+    width: 1%;
+    height: 2%;
+}

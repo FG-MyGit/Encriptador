@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Encriptador</title>
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Icono de la Pagina -->
+    <link rel="shortcut icon" href="img/iconoencriptador.png">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1 class="titulo">Encriptador de Texto</h1>     
+    </header>
+
+    <!-- ID Particles.js -->
+    <div id="particles-js"></div>
+
+    <main>
+        <section class="input-box">
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+            <div id="div-desaparece">
+                <h5 class="informacion">• Solo letras minúsculas y sin acentos.</h5>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>        
+        <section class="mensaje-box">
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>
+        <section class="develop">
+            <p class="creditos">Develop by: Facundo Gareca</p>
+            <div class="iconos">
+                <a href="https://www.linkedin.com/in/facundo-gareca-b85350232"><img class = "linkedin" src="img/linkedin.png"></a>
+                
+                <a href="https://github.com/FG-MyGit"><img class="github" src="img/github.png"></a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- JS Script de Encriptado -->
+    <script src="script.js"></script>
+
+    <!-- JS Particles.js -->
+    <script src="particulas/particles.min.js"></script>
+    <script src="particulas/app.js"></script>
+    <!-- JS FontAwesome -->
+    <script src="https://kit.fontawesome.com/a2e8d0339c.js"></script>
+</body>
+</html>
